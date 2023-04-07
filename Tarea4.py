@@ -24,12 +24,12 @@ login_button.click()
 email_input = WebDriverWait(driver, 10).until(
     EC.presence_of_element_located((By.ID, "signin-email"))
 )
-email_input.send_keys("tu_correo_electronico")
+email_input.send_keys("adrian021423@gmail.com")
 
 password_input = WebDriverWait(driver, 10).until(
     EC.presence_of_element_located((By.ID, "signin-password"))
 )
-password_input.send_keys("tu_contraseña")
+password_input.send_keys("rebecaadrian0214")
 
 login_submit_button = driver.find_element_by_xpath("//button[contains(text(), 'Iniciar sesión')]")
 login_submit_button.click()
