@@ -103,5 +103,18 @@ time.sleep(5)
 # Tomar una captura de pantalla de la página de inicio
 driver.save_screenshot("Img/inicio.png")
 
+reporter = HtmlReporter('reporte.html')
+
+reporter.add_info("Se inició sesión exitosamente")
+reporter.add_info("El juego Spider-Man Miles Morales PS5 fue agregado al carrito")
+reporter.add_info("Un juego fue eliminado del carrito")
+reporter.add_info("La página de ofertas fue cargada exitosamente")
+reporter.add_info("Se cerró sesión correctamente")
+
+reporter.create_report()
+
+reporter.close()
+
+
 # Cerrar el navegador
 driver.quit()
